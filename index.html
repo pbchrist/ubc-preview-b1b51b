@@ -111,6 +111,7 @@
   .people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); }
   .person { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; align-items: start; }
   .photo { width: 120px; height: 150px; background: var(--steel); border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--display); font-size: 40px; font-weight: 600; color: var(--muted); position: relative; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .photo small { position: absolute; bottom: 8px; font-family: var(--mono); font-size: 9px; letter-spacing: .14em; color: var(--muted); }
   .person h3 { font-size: 34px; }
   .person .role { font-family: var(--mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--brass); margin: 6px 0 12px; }
@@ -383,7 +384,7 @@
       </div>
       <div class="people">
         <div class="person">
-          <div class="photo" aria-hidden="true">BC<small>PHOTO</small></div>
+          <div class="photo"><img src="people/bob-collins.jpg" alt="Bob Collins"></div>
           <div>
             <h3>Bob Collins</h3>
             <p class="role">Managing Partner</p>
@@ -391,7 +392,7 @@
           </div>
         </div>
         <div class="person">
-          <div class="photo" aria-hidden="true">JM<small>PHOTO</small></div>
+          <div class="photo"><img src="people/joe-meyer.jpg" alt="Joe Meyer"></div>
           <div>
             <h3>Joe Meyer</h3>
             <p class="role">Partnerships &amp; Business Development</p>
