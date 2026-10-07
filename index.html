@@ -151,6 +151,10 @@
   .close .wrap { position: relative; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 40px; align-items: end; padding-top: clamp(80px, 11vw, 140px); padding-bottom: clamp(80px, 11vw, 140px); }
   .close h2 { font-size: clamp(48px, 7vw, 104px); }
   .close h2 span { color: var(--brass-hi); }
+  .close h2 { font-size: clamp(40px, 4.2vw, 64px); }
+  .close h2 .l1, .close h2 .l2 { display: block; white-space: nowrap; }
+  .close h2 .l1 { color: var(--bone); }
+  @media (max-width: 480px) { .close h2 { font-size: 8.2vw; } }
   .reach a:not(.btn) { display: block; font-family: var(--display); font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: .03em; text-decoration: none; border-bottom: 1px solid var(--line); padding: 8px 0 10px; }
   .reach a.email { font-family: var(--sans); font-weight: 500; font-size: clamp(16px, 1.6vw, 20px); letter-spacing: 0; padding: 14px 0; }
   .reach a:not(.btn):hover { color: var(--brass-hi); }
@@ -412,7 +416,7 @@
     <video class="bgv" src="assets/video/6046358.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
     <svg class="emblem bg" aria-hidden="true"><use href="#ubc-emblem"/></svg>
     <div class="wrap">
-      <h2>Tell us what you need, or who you need. <span style="display:block">We'll find them.</span></h2>
+      <h2><span class="l1">Tell us who you need.</span><span class="l2">We'll go find them.</span></h2>
       <div class="reach">
         <p class="label">Call or text</p>
         <a href="tel:+14044800297">404-480-0297</a>
